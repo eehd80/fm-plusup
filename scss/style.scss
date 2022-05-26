@@ -14598,6 +14598,9 @@ textarea:focus {
 }
 
 // 220526 수정
+.plusup-onestop .lst-onestop li {
+    opacity: 1 !important;
+}
 .sec-instructor {
     height: 1070px;
     padding: 70px 0;
@@ -14654,13 +14657,18 @@ textarea:focus {
         }
     }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
     .sec-instructor {
         height: auto;
-        margin-top: -20px;
+        // margin-top: -20px;
         .link-detail {
             transform: scale(0.8);
         }
+    }
+}
+@media (max-width: 800px) {
+    .sec-instructor {
+        margin-top: -20px;
     }
 }
 @media (max-width: 680px) {

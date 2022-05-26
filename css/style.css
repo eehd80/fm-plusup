@@ -12621,6 +12621,10 @@ textarea:focus {
   }
 }
 
+.plusup-onestop .lst-onestop li {
+  opacity: 1 !important;
+}
+
 .sec-instructor {
   height: 1070px;
   padding: 70px 0;
@@ -12688,14 +12692,19 @@ textarea:focus {
   line-height: 1;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
   .sec-instructor {
     height: auto;
-    margin-top: -20px;
   }
   .sec-instructor .link-detail {
     -webkit-transform: scale(0.8);
             transform: scale(0.8);
+  }
+}
+
+@media (max-width: 800px) {
+  .sec-instructor {
+    margin-top: -20px;
   }
 }
 
