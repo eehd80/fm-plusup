@@ -1,0 +1,148 @@
+@charset "UTF-8";
+@import "reset", "fonts", "variables", "mixin";
+
+// layout
+.wrap {
+    max-width: 1920px;
+    min-width: 1040px;
+    padding-top: 112px;
+}
+.container {
+    width: 100%;
+    max-width: 1213px;
+    margin: 0 auto;
+}
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: $w;
+    .container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 112px;
+    }
+    .logo {
+        @include posY;
+        left: 40px;
+        a {
+            display: block;
+            width: 200px;
+            height: 40px;
+            background: url(../../images/logo-plusup.png) 0 0 no-repeat;
+            text-indent: -9999px;
+        }
+    }
+}
+#gnb {
+    @include posX;
+    top: 15px;
+    .lst-gnb {
+        display: flex;
+        li {
+            margin-right: 10px;
+            &:last-child {
+                margin-right: 0;
+            }
+            &.on a {
+                background-color: $primary1;
+                color: $w;
+                strong {
+                    color: $w;
+                }
+            }
+        }
+        a {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 252px;
+            height: 82px;
+            padding-top: 7px;
+            font-size: 15px;
+            font-weight: 500;
+            color: #4f5b72;
+            border-radius: 10px;
+            background-color: #e5e8eb;
+            strong {
+                display: block;
+                font-size: 23px;
+                font-weight: bold;
+                color: #4f5b72;
+            }
+        }
+    }
+}
+// #main {
+//     .intro {
+//         display: block;
+//         background: url(../../images/plusevent-intro.jpg) 50% 0 no-repeat;
+//     }
+//     .sec1 {
+//         display: block;
+//         height: 920px;
+//         background: url(../../images/plusevent-sec1.jpg) 50% 0 no-repeat;
+//         text-indent: -9999px;
+//     }
+//     .sec2 {
+//         height: 1070px;
+//         background: url(../../images/plusevent-sec2.jpg) 50% 0 no-repeat;
+//         text-indent: -9999px;
+//     }
+//     .sec3 {
+//         height: 767px;
+//         background: url(../../images/plusevent-sec3.jpg) 50% 0 no-repeat;
+//         text-indent: -9999px;
+//     }
+//     .sec4 {
+//         height: 1083px;
+//         background: url(../../images/plusevent-sec4.jpg) 50% 0 no-repeat;
+//         text-indent: -9999px;
+//     }
+//     .sec5 {
+//         height: 882px;
+//         background: url(../../images/plusevent-sec5.jpg) 50% 0 no-repeat;
+//         text-indent: -9999px;
+//     }
+//     .sec6 {
+//         height: 1225px;
+//         background: url(../../images/plusevent-sec6.jpg) 50% 0 no-repeat;
+//         text-indent: -9999px;
+//     }
+// }
+
+.intro {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 894px;
+    padding: 34px 0 0;
+    box-sizing: border-box;
+    background: url(../../images/intro-bg.png) 50% 0 no-repeat;
+    .tit {
+        width: 1328px;
+        height: 431px;
+        margin: 0 auto 36px;
+        background: url(../../images/intro-tit.png) 50% 0 no-repeat;
+        text-indent: -9999px;
+    }
+    .lst-info {
+        display: flex;
+        width: 100%;
+        max-width: 1040px;
+        li {
+            width: 33.333%;
+        }
+        a {
+            display: block;
+            height: 254px;
+            background-color: $w;
+            background-color: red;
+        }
+    }
+}
