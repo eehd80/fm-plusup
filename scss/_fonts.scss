@@ -1,0 +1,21 @@
+// font
+@mixin ff-g {
+    font-family: "mGothic";
+}
+
+// poppins
+@mixin ff-poppin {
+    font-family: "Poppins", sans-serif;
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap");
+
+// oneMobileTitle
+@mixin ff-onemobile {
+    font-family: "oneMobileTitle";
+}
+@font-face {
+    font-family: "oneMobileTitle";
+    src: url(../fonts/ONE-Mobile-Title.woff);
+    font-weight: normal;
+    font-style: normal;
+}
