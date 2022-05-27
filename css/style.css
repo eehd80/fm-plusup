@@ -71,14 +71,14 @@ textarea:focus {
 }
 
 .sub_b_con .txt img {
-  margin-top: 5px;
+  margin-top: 0;
 }
 
 .sub_b_con .txt .info {
   font-size: 19px;
   color: #666;
   line-height: 32px;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 .sub_b_con .img {
@@ -88,7 +88,7 @@ textarea:focus {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  width: 40%;
+  width: 46%;
   height: 100%;
 }
 
@@ -8439,7 +8439,13 @@ textarea:focus {
     display: none;
   }
   .sub_b_con {
-    height: auto;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    height: 100%;
+  }
+  .sub_b_con .txt {
+    width: 100%;
   }
   .sub_b_con .txt .main_p {
     font-size: 35px;
@@ -8447,6 +8453,12 @@ textarea:focus {
   .sub_b_con .txt img {
     width: 203px;
     margin-left: 3px;
+  }
+  .sub_b_con .img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 70%;
   }
   .sub_banner_layer {
     background-image: url("../img/sub_img/m_sub_bg.png");
@@ -11894,6 +11906,9 @@ textarea:focus {
     font-size: 14px;
     margin-top: 9px;
   }
+  .sub_banner_layer {
+    height: 500px;
+  }
   .sub_b_con .txt .main_p {
     font-size: 28px;
   }
@@ -11903,6 +11918,9 @@ textarea:focus {
   .sub_b_con .txt .info {
     font-size: 15px;
     word-break: keep-all;
+  }
+  .sub_b_con .img {
+    width: 100%;
   }
   .sub_cur_wrap .tit_box .tit {
     font-size: 25px;
@@ -12626,8 +12644,8 @@ textarea:focus {
 }
 
 .sec-instructor {
-  height: 1070px;
-  padding: 70px 0;
+  height: 1155px;
+  padding: 110px 0;
   background: url(../img/sub_img/sec2-bg1.png) 50% 0/cover no-repeat;
   text-align: center;
 }
@@ -12644,20 +12662,20 @@ textarea:focus {
 
 .sec-instructor .sec-tit p {
   width: calc(100% - 40px);
-  margin: 20px auto 0;
+  margin: 12px auto 0;
   font-size: 16px;
   font-weight: 300;
   color: #777;
 }
 
 .sec-instructor .sec-cont {
-  margin-top: 70px;
+  margin-top: 55px;
 }
 
 .sec-instructor .sec-cont img {
   display: block;
   width: 90%;
-  max-width: 983px;
+  max-width: 1238px;
   margin: 0 auto;
 }
 
@@ -12675,6 +12693,7 @@ textarea:focus {
   font-size: 22px;
   font-family: "oneMobileTitle";
   color: #fff;
+  font-style: italic;
 }
 
 .sec-instructor .link-detail span {
@@ -12690,6 +12709,7 @@ textarea:focus {
   font-weight: 900;
   opacity: 0.5;
   line-height: 1;
+  font-style: normal;
 }
 
 @media (max-width: 1300px) {

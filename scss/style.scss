@@ -56,20 +56,20 @@ textarea:focus {
         }
 
         img {
-            margin-top: 5px;
+            margin-top: 0;
         }
 
         .info {
             font-size: 19px;
             color: #666;
             line-height: 32px;
-            margin-top: 40px;
+            margin-top: 30px;
         }
     }
     .img {
         display: flex;
         align-items: flex-end;
-        width: 40%;
+        width: 46%;
         height: 100%;
         img {
             width: 100%;
@@ -9089,18 +9089,25 @@ textarea:focus {
     }
 
     .sub_b_con {
+        align-items: flex-start;
+        height: 100%;
         .txt {
+            width: 100%;
             .main_p {
                 font-size: 35px;
             }
-
             img {
                 width: 203px;
                 margin-left: 3px;
             }
         }
 
-        height: auto;
+        .img {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 70%;
+        }
     }
 
     .sub_banner_layer {
@@ -13549,19 +13556,26 @@ textarea:focus {
             height: 40px;
         }
     }
-
-    .sub_b_con .txt {
-        .main_p {
-            font-size: 28px;
+    .sub_banner_layer {
+        height: 500px;
+    }
+    .sub_b_con {
+        .txt {
+            .main_p {
+                font-size: 28px;
+            }
+    
+            img {
+                width: 170px;
+            }
+    
+            .info {
+                font-size: 15px;
+                word-break: keep-all;
+            }
         }
-
-        img {
-            width: 170px;
-        }
-
-        .info {
-            font-size: 15px;
-            word-break: keep-all;
+        .img {
+            width: 100%;
         }
     }
 
@@ -14602,8 +14616,8 @@ textarea:focus {
     opacity: 1 !important;
 }
 .sec-instructor {
-    height: 1070px;
-    padding: 70px 0;
+    height: 1155px;
+    padding: 110px 0;
     background: url(../img/sub_img/sec2-bg1.png) 50% 0 / cover no-repeat;
     text-align: center;
     .sec-tit {
@@ -14615,18 +14629,18 @@ textarea:focus {
         }
         p {
             width: calc(100% - 40px);
-            margin: 20px auto 0;
+            margin: 12px auto 0;
             font-size: 16px;
             font-weight: 300;
             color: #777;
         }
     }
     .sec-cont {
-        margin-top: 70px;
+        margin-top: 55px;
         img {
             display: block;
             width: 90%;
-            max-width: 983px;
+            max-width: 1238px;
             margin: 0 auto;
         }
     }
@@ -14644,6 +14658,7 @@ textarea:focus {
         font-size: 22px;
         @include ff-onemobile;
         color: $w;
+        font-style: italic;
         span {
             color: #fff773;
         }
@@ -14654,6 +14669,7 @@ textarea:focus {
             @include lineaw-arr-next;
             opacity: 0.5;
             line-height: 1;
+            font-style: normal;
         }
     }
 }
@@ -14701,3 +14717,10 @@ textarea:focus {
         transform: translateY(0%);
     }
 }
+
+// html {
+//     background: url(../pc2.png) 34% 153px no-repeat;
+//     body {
+//         opacity: 0.5;
+//     }
+// }
