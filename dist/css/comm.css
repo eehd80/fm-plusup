@@ -465,6 +465,7 @@ legend {
   max-width: 1920px;
   height: 112px;
   margin: 0 auto;
+  padding: 0 40px;
   background-color: #fff;
 }
 
@@ -490,17 +491,21 @@ legend {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   top: 15px;
+  width: 1038px;
 }
 
 #gnb .lst-gnb {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 #gnb .lst-gnb li {
   overflow: hidden;
-  margin-right: 10px;
+  width: 24%;
   border-radius: 10px;
 }
 
@@ -531,7 +536,7 @@ legend {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 252px;
+  width: 100%;
   height: 82px;
   padding-top: 7px;
   font-size: 15px;
@@ -545,6 +550,22 @@ legend {
   font-size: 23px;
   font-weight: bold;
   color: #4f5b72;
+}
+
+@media screen and (max-width: 1520px) {
+  #gnb {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  #gnb {
+    left: auto;
+    right: 40px;
+    -webkit-transform: none;
+            transform: none;
+    width: calc(100% - 300px);
+  }
 }
 
 .fix-counseling {
@@ -580,7 +601,9 @@ legend {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 67%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   padding-top: 5px;
   font-family: "S-CoreDream-5";
   font-size: 27px;
@@ -667,6 +690,10 @@ legend {
 
 .intro .lst-info li:nth-child(2) {
   background: url(../../images/intro-info2.png) 0 0 no-repeat;
+}
+
+.intro .lst-info li:nth-child(2) .thumb {
+  display: none;
 }
 
 .intro .lst-info li:last-child {
@@ -790,6 +817,10 @@ legend {
 
 .sec3 .tit p {
   color: rgba(255, 255, 255, 0.8);
+}
+
+.sec3 .swiper-sec3-m {
+  display: none;
 }
 
 .scroll-verti {
@@ -1014,6 +1045,7 @@ legend {
         -ms-flex-align: center;
             align-items: center;
     height: 58px;
+    padding: 0;
   }
   #header .logo a {
     width: 0;
@@ -1027,20 +1059,25 @@ legend {
     -webkit-transform: none;
             transform: none;
     width: 100%;
-    overflow-x: auto;
+    overflow: hidden;
   }
   #gnb .lst-gnb {
-    padding-left: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 5px;
+    overflow-x: auto;
   }
   #gnb .lst-gnb li {
-    -webkit-box-flex: 0;
-        -ms-flex-positive: 0;
-            flex-grow: 0;
-    margin-right: 5px;
+    float: left;
+    width: 24%;
     border-radius: 5px;
   }
   #gnb .lst-gnb a {
-    width: 111px;
+    width: 100%;
     height: 46px;
     padding-top: 4px;
     font-size: 11px;
@@ -1054,14 +1091,23 @@ legend {
   }
   .fix-counseling .counseling-atone {
     width: 58%;
-    font-size: 19px;
+    padding-top: 3px;
+    font-size: 17px;
+  }
+  .fix-counseling .counseling-atone::after {
+    margin: -2px 0 0 3px;
   }
   .fix-counseling .counseling-application {
-    width: 42%;
-    font-size: 19px;
+    width: 39%;
+    padding-top: 3px;
+    font-size: 17px;
+  }
+  .fix-counseling .counseling-application::after {
+    margin: -2px 0 0 3px;
   }
   .intro {
     position: relative;
+    background: #020828;
   }
   .intro .m-thumb {
     position: absolute;
@@ -1100,6 +1146,9 @@ legend {
         -ms-flex-order: 1;
             order: 1;
     background: #fff;
+  }
+  .intro .lst-info li:nth-child(2) .thumb {
+    display: block;
   }
   .intro .lst-info li:first-child {
     -webkit-box-ordinal-group: 3;
@@ -1144,30 +1193,35 @@ legend {
   }
   .sec3 {
     padding: 74px 0;
-    background: url(../../images/m-sec3-bg1@2x.png) 0 0/cover no-repeat;
+    background: #33b7cb;
   }
   .sec3 .tit h2 {
     font-size: 42px;
     line-height: 1.5;
     text-indent: 0;
+    letter-spacing: -0.5px;
   }
   .sec3 .tit h2 span {
     font-size: inherit;
   }
   .sec3 .tit p {
-    width: 380px;
+    width: 375px;
     margin: 5px auto 0;
     font-size: 21px;
     line-height: 1.5;
     text-indent: 0;
+    letter-spacing: -2px;
   }
   .sec3 .swiper-sec3 {
     display: none;
   }
+  .sec3 .swiper-sec3-m {
+    display: block;
+  }
   .sec3 .scroll-verti {
-    width: 374px;
+    width: 90%;
+    max-width: 374px;
     margin-top: 46px;
-    opacity: 0.5;
   }
   .sec3 .scroll-verti li {
     margin-bottom: 14px;
