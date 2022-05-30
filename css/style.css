@@ -12812,12 +12812,4 @@ textarea:focus {
             transform: translateY(0%);
   }
 }
-
-html {
-  background: url(../m2.png) 34% -189px no-repeat;
-}
-
-html body {
-  opacity: 0.5;
-}
 /*# sourceMappingURL=style.css.map */
