@@ -9090,10 +9090,13 @@ textarea:focus {
     }
 
     .sub_b_con {
+        display: flex;
+        flex-direction: column;
         align-items: flex-start;
         height: 100%;
         .txt {
             width: 100%;
+            padding: 40px 23px 0;
             .main_p {
                 font-size: 35px;
             }
@@ -9104,19 +9107,22 @@ textarea:focus {
         }
 
         .img {
-            position: absolute;
-            left: auto;
-            right: -40px;
-            bottom: 10px;
-            width: 80%;
+            display: flex;
+            justify-content: flex-end;
+            position: static;
+            width: 100%;
+            margin-top: -10px;
+            img {
+                width: 100%;
+            }
         }
     }
 
     .sub_banner_layer {
         background-image: url("../img/sub_img/m_sub_bg.png");
-        padding: 50px 40px 0;
+        padding: 0;
         background-position: top;
-        height: 550px;
+        // height: 550px;
     }
 
     .sub_b_con .txt {
@@ -13558,9 +13564,9 @@ textarea:focus {
             height: 40px;
         }
     }
-    .sub_banner_layer {
-        height: 500px;
-    }
+    // .sub_banner_layer {
+    //     height: 500px;
+    // }
     .sub_b_con {
         .txt {
             .main_p {
@@ -13640,10 +13646,10 @@ textarea:focus {
         }
     }
 
-    .sub_banner_layer {
-        height: 594px;
-        padding: 45px 40px 0;
-    }
+    // .sub_banner_layer {
+    //     height: 594px;
+    //     padding: 45px 40px 0;
+    // }
 
     /*sub04_01*/
 
@@ -14690,6 +14696,7 @@ textarea:focus {
 @media (max-width: 800px) {
     .sec-instructor {
         margin-top: -20px;
+        padding: 0;
         .bg-inst-m {
             display: block;
             width: 100%;
@@ -14702,11 +14709,6 @@ textarea:focus {
 @media (max-width: 680px) {
     .sec-instructor {
         padding: 80px 0;
-        .sec-tit {
-            h2 {
-                font-size: 6vw;
-            }
-        }
     }
 }
 @media (max-width: 600px) {
@@ -14719,12 +14721,17 @@ textarea:focus {
         }
         .sec-tit {
             position: absolute;
-            top: 70px;
+            top: 60px;
             left: 50%;
             transform: translateX(-50%);
             width: 100%;
+            h2 {
+                font-size: 6vw;
+                font-weight: 400;
+            }
             p {
                 margin-top: 20px;
+                line-height: 1.5;
             }
         }
         .sec-cont {

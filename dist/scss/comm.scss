@@ -504,8 +504,24 @@
         height: auto;
         padding: 0;
         background: none;
-        .event-img {
+        .event-img,
+        .event-img1,
+        .event-img2 {
             display: none;
+        }
+        .tit {
+            h2,
+            p {
+                margin: 0;
+                font-size: 0;
+                line-height: 0;
+                text-indent: -9999px;
+                em {
+                    font-size: 0;
+                    line-height: 0;
+                    text-indent: -9999px;
+                }
+            }
         }
     }
     .m-thumb {
@@ -569,45 +585,127 @@
     }
 
     .intro {
+        position: relative;
+        .m-thumb {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+        .wrap-box {
+            position: relative;
+            width: 100%;
+            padding-bottom: 94%;
+            .inner-box {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+        }
         .lst-info {
             flex-direction: column;
-            position: absolute;
-            top: 398px;
-            left: 50%;
-            transform: translateX(-50%);
             width: 85%;
-            margin-top: 0;
+            margin: 0 auto 25px;
             li {
+                position: relative;
                 width: 100%;
+                border-right: none;
+                border-bottom: 1px solid #cbcfd9;
                 background-color: $w;
+                &:nth-child(2) {
+                    order: 1;
+                    background: $w;
+                }
+                &:first-child {
+                    order: 2;
+                }
+                &:last-child {
+                    order: 3;
+                }
             }
             a {
+                height: 134px;
                 padding: 24px 0 0 30px;
+            }
+            em {
+                font-size: 13px;
+            }
+            strong {
+                font-size: 28px;
+            }
+            p br {
+                display: none;
+            }
+            .btn-click {
+                position: absolute;
+                bottom: 15px;
+                right: 13px;
+                z-index: 10;
+                height: 27px;
+                margin-top: 0;
+                line-height: 27px;
+            }
+            .thumb {
+                width: auto;
+                height: 96%;
+                bottom: 0;
+                img {
+                    width: auto;
+                    height: 100%;
+                }
             }
         }
     }
-    .sec1 {
-        display: none;
-    }
-    .sec2 {
-        display: none;
-    }
     .sec3 {
-        display: none;
-    }
-    .sec4 {
-        display: none;
-    }
-    .sec5 {
-        display: none;
-    }
-    .sec6 {
-        display: none;
-    }
-    .sec7 {
-        display: none;
-    }
-    .sec8 {
-        display: none;
+        padding: 74px 0;
+        background: url(../../images/m-sec3-bg1@2x.png) 0 0 / cover no-repeat;
+        .tit {
+            h2 {
+                font-size: 42px;
+                line-height: 1.5;
+                text-indent: 0;
+                span {
+                    font-size: inherit;
+                }
+            }
+            p {
+                width: 380px;
+                margin: 5px auto 0;
+                font-size: 21px;
+                line-height: 1.5;
+                text-indent: 0;
+            }
+        }
+        .swiper-sec3 {
+            display: none;
+        }
+        .scroll-verti {
+            width: 374px;
+            margin-top: 46px;
+            opacity: 0.5;
+            li {
+                margin-bottom: 14px;
+            }
+            .lst-class {
+                flex-direction: column;
+            }
+            .link-txt {
+                padding: 29px 15px 22px;
+                .scab {
+                    padding: 5px 6px 4px;
+                    font-size: 15px;
+                }
+                .tit {
+                    height: auto;
+                    font-size: 24px;
+                    line-height: 1.5;
+                }
+                .writer {
+                    margin-top: 8px;
+                    font-size: 18px;
+                }
+            }
+        }
     }
 }

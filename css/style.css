@@ -8440,6 +8440,13 @@ textarea:focus {
     display: none;
   }
   .sub_b_con {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -8447,6 +8454,7 @@ textarea:focus {
   }
   .sub_b_con .txt {
     width: 100%;
+    padding: 40px 23px 0;
   }
   .sub_b_con .txt .main_p {
     font-size: 35px;
@@ -8456,17 +8464,23 @@ textarea:focus {
     margin-left: 3px;
   }
   .sub_b_con .img {
-    position: absolute;
-    left: auto;
-    right: -40px;
-    bottom: 10px;
-    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    position: static;
+    width: 100%;
+    margin-top: -10px;
+  }
+  .sub_b_con .img img {
+    width: 100%;
   }
   .sub_banner_layer {
     background-image: url("../img/sub_img/m_sub_bg.png");
-    padding: 50px 40px 0;
+    padding: 0;
     background-position: top;
-    height: 550px;
   }
   .sub_b_con .txt {
     position: relative;
@@ -11908,9 +11922,6 @@ textarea:focus {
     font-size: 14px;
     margin-top: 9px;
   }
-  .sub_banner_layer {
-    height: 500px;
-  }
   .sub_b_con .txt .main_p {
     font-size: 32px;
   }
@@ -11961,10 +11972,6 @@ textarea:focus {
   }
   .sub11_layer04 .right li img {
     width: 13px;
-  }
-  .sub_banner_layer {
-    height: 594px;
-    padding: 45px 40px 0;
   }
   /*sub04_01*/
   .sub_layer .sub_menu li a {
@@ -12734,6 +12741,7 @@ textarea:focus {
 @media (max-width: 800px) {
   .sec-instructor {
     margin-top: -20px;
+    padding: 0;
   }
   .sec-instructor .bg-inst-m {
     display: block;
@@ -12748,9 +12756,6 @@ textarea:focus {
   .sec-instructor {
     padding: 80px 0;
   }
-  .sec-instructor .sec-tit h2 {
-    font-size: 6vw;
-  }
 }
 
 @media (max-width: 600px) {
@@ -12764,14 +12769,19 @@ textarea:focus {
   }
   .sec-instructor .sec-tit {
     position: absolute;
-    top: 70px;
+    top: 60px;
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
     width: 100%;
   }
+  .sec-instructor .sec-tit h2 {
+    font-size: 6vw;
+    font-weight: 400;
+  }
   .sec-instructor .sec-tit p {
     margin-top: 20px;
+    line-height: 1.5;
   }
   .sec-instructor .sec-cont {
     margin-top: 0;
