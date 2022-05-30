@@ -48,7 +48,7 @@ textarea:focus {
     height: 442px;
 
     .txt {
-        width: 50%;
+        width: 53%;
         .main_p {
             font-size: 62px;
             color: #202020;
@@ -9104,10 +9104,10 @@ textarea:focus {
 
         .img {
             position: absolute;
-            bottom: 0;
-            right: 0;
+            left: auto;
+            right: -40px;
             bottom: 10px;
-            width: 70%;
+            width: 80%;
         }
     }
 
@@ -13579,7 +13579,6 @@ textarea:focus {
         }
         .img {
             left: -30px;
-            right: -40px;
             width: auto;
         }
     }
@@ -14641,6 +14640,9 @@ textarea:focus {
             color: #777;
         }
     }
+    .bg-inst-m {
+        display: none;
+    }
     .sec-cont {
         margin-top: 55px;
         img {
@@ -14687,6 +14689,13 @@ textarea:focus {
 @media (max-width: 800px) {
     .sec-instructor {
         margin-top: -20px;
+        .bg-inst-m {
+            display: block;
+            width: 100%;
+        }
+        img.bg-inst-pc {
+            display: none;
+        }
     }
 }
 @media (max-width: 680px) {
@@ -14703,6 +14712,10 @@ textarea:focus {
     .sec-instructor {
         position: relative;
         padding: 0;
+        .m {
+            display: block;
+            width: 100%;
+        }
         .sec-tit {
             position: absolute;
             top: 70px;

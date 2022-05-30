@@ -283,6 +283,14 @@ legend {
   content: "";
 }
 
+html {
+  background: url(../../m.jpg) 50% 0 no-repeat;
+}
+
+html body {
+  opacity: 0.7;
+}
+
 @font-face {
   font-family: "NanumBarunGothic";
   src: url(../fonts/NanumBarunGothicLight.woff);
@@ -989,7 +997,7 @@ legend {
   }
   .wrap {
     min-width: 0;
-    padding-top: 58px;
+    padding-top: 0;
   }
   #header {
     display: -webkit-box;
@@ -1051,13 +1059,16 @@ legend {
         -ms-flex-direction: column;
             flex-direction: column;
     position: absolute;
-    top: 200px;
+    top: 398px;
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
+    width: 85%;
+    margin-top: 0;
   }
   .intro .lst-info li {
     width: 100%;
+    background-color: #fff;
   }
   .sec1 {
     display: none;

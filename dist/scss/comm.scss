@@ -516,7 +516,7 @@
     // layout
     .wrap {
         min-width: 0;
-        padding-top: 58px;
+        padding-top: 0;
     }
     #header {
         display: flex;
@@ -572,11 +572,14 @@
         .lst-info {
             flex-direction: column;
             position: absolute;
-            top: 200px;
+            top: 398px;
             left: 50%;
             transform: translateX(-50%);
+            width: 85%;
+            margin-top: 0;
             li {
                 width: 100%;
+                background-color: $w;
             }
         }
     }

@@ -61,7 +61,7 @@ textarea:focus {
 }
 
 .sub_b_con .txt {
-  width: 50%;
+  width: 53%;
 }
 
 .sub_b_con .txt .main_p {
@@ -8456,10 +8456,10 @@ textarea:focus {
   }
   .sub_b_con .img {
     position: absolute;
-    bottom: 0;
-    right: 0;
+    left: auto;
+    right: -40px;
     bottom: 10px;
-    width: 70%;
+    width: 80%;
   }
   .sub_banner_layer {
     background-image: url("../img/sub_img/m_sub_bg.png");
@@ -11924,7 +11924,6 @@ textarea:focus {
   }
   .sub_b_con .img {
     left: -30px;
-    right: -40px;
     width: auto;
   }
   .sub_cur_wrap .tit_box .tit {
@@ -12674,6 +12673,10 @@ textarea:focus {
   color: #777;
 }
 
+.sec-instructor .bg-inst-m {
+  display: none;
+}
+
 .sec-instructor .sec-cont {
   margin-top: 55px;
 }
@@ -12731,6 +12734,13 @@ textarea:focus {
   .sec-instructor {
     margin-top: -20px;
   }
+  .sec-instructor .bg-inst-m {
+    display: block;
+    width: 100%;
+  }
+  .sec-instructor img.bg-inst-pc {
+    display: none;
+  }
 }
 
 @media (max-width: 680px) {
@@ -12746,6 +12756,10 @@ textarea:focus {
   .sec-instructor {
     position: relative;
     padding: 0;
+  }
+  .sec-instructor .m {
+    display: block;
+    width: 100%;
   }
   .sec-instructor .sec-tit {
     position: absolute;
