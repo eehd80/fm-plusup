@@ -9106,6 +9106,7 @@ textarea:focus {
             position: absolute;
             bottom: 0;
             right: 0;
+            bottom: 10px;
             width: 70%;
         }
     }
@@ -13562,20 +13563,24 @@ textarea:focus {
     .sub_b_con {
         .txt {
             .main_p {
-                font-size: 28px;
+                font-size: 32px;
             }
-    
+
             img {
-                width: 170px;
+                margin-top: 6px;
+                width: 235px;
             }
-    
+
             .info {
-                font-size: 15px;
+                margin-top: 14px;
+                font-size: 16px;
                 word-break: keep-all;
             }
         }
         .img {
-            width: 100%;
+            left: -30px;
+            right: -40px;
+            width: auto;
         }
     }
 
@@ -13636,7 +13641,8 @@ textarea:focus {
     }
 
     .sub_banner_layer {
-        padding: 40px 30px 0;
+        height: 594px;
+        padding: 45px 40px 0;
     }
 
     /*sub04_01*/
@@ -14676,10 +14682,6 @@ textarea:focus {
 @media (max-width: 1300px) {
     .sec-instructor {
         height: auto;
-        // margin-top: -20px;
-        .link-detail {
-            transform: scale(0.8);
-        }
     }
 }
 @media (max-width: 800px) {
@@ -14694,6 +14696,36 @@ textarea:focus {
             h2 {
                 font-size: 6vw;
             }
+        }
+    }
+}
+@media (max-width: 600px) {
+    .sec-instructor {
+        position: relative;
+        padding: 0;
+        .sec-tit {
+            position: absolute;
+            top: 70px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            p {
+                margin-top: 20px;
+            }
+        }
+        .sec-cont {
+            margin-top: 0;
+            img {
+                width: 100%;
+            }
+        }
+        .link-detail {
+            position: absolute;
+            bottom: 65px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: calc(100% - 70px);
+            margin-top: 0;
         }
     }
 }
@@ -14719,9 +14751,9 @@ textarea:focus {
     }
 }
 
-// html {
-//     background: url(../pc2.png) 34% 153px no-repeat;
-//     body {
-//         opacity: 0.5;
-//     }
-// }
+html {
+    background: url(../m2.png) 34% -189px no-repeat;
+    body {
+        opacity: 0.5;
+    }
+}

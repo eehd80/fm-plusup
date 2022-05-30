@@ -25,7 +25,6 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         <script src="./dist/vendor/scrollUp/jquery.scrollUp.min.js"></script>
-        <script src="./dist/js/comm.js"></script>
         <!--[if lt IE 9]>
             <script src="./dist/vendor/html5.js"></script>
             <script src="./dist/vendor/respond.min.js"></script>
@@ -70,10 +69,18 @@
                         </li>
                     </ul>
                 </nav>
+                <div class="fix-counseling">
+                    <a href="tel:032123456" class="counseling-atone"> <span class="pc">032-123-4567</span> <span class="bar pc"></span> 간편 상담신청 바로가기</ㅁ>
+                    <a href="#" class="counseling-application">서비스 신청</a>
+                </div>
             </header>
             <main id="main">
-                <section class="intro">
-                    <h2 class="tit">플러스 업에서 모든 주식서비스를 한-큐에 받아가세요!</h2>
+                <section class="sec-g intro">
+                    <div class="event-img">
+                        <img src="./images/intro-tit.png" alt="">
+                    </div>
+                    <img src="./images/m-intro-bg1@2x.jpg" class="m-thumb" alt="">
+                    <h2 class="blind">플러스 업에서 모든 주식서비스를 한-큐에 받아가세요!</h2>
                     <p class="blind">오직 플러스업에서만, 프리미엄 All-in-ONE 주식정보</p>
 
                     <ul class="lst-info">
@@ -86,6 +93,9 @@
                                     실시간 무료 제공
                                 </p>
                                 <span class="btn-click">Click</span>
+                                <div class="thumb">
+                                    <img src="./images/intro-info1.png" alt="" />
+                                </div>
                             </a>
                         </li>
                         <li>
@@ -108,31 +118,169 @@
                                     투자전략 제공
                                 </p>
                                 <span class="btn-click">Click</span>
+                                <div class="thumb">
+                                    <img src="./images/intro-info3.png" alt="" />
+                                </div>
                             </a>
                         </li>
                     </ul>
                 </section>
-                <section class="sec1">
-                    <h2>주식교육의 끝판왕</h2>
-                    <p>꿈을 현실로 플러스UP 하는 FM스쿨 5분안에 끝장 볼 자신있다!!!</p>
-                </section>
-                <section class="sec2">
-                    <h2>전문 셀럽 강사진</h2>
-                    <p>15명의 전문 셀럽 강사진들이 당신의 꿈을 현실로 만들어드립니다.</p>
-                </section>
-                <section class="sec3">
-                    <div class="tit">
-                        <h2>하루 딱 5분!</h2>
-                        <p>1일 5분, 전문 셀럽 강사 'FM스쿨'과 함께하는 플러그UP 강좌</p>
+                <section class="sec-g sec1">
+                    <h2 class="blind">주식교육의 끝판왕</h2>
+                    <p class="blind">꿈을 현실로 플러스UP 하는 FM스쿨 5분안에 끝장 볼 자신있다!!!</p>
+                    <div class="event-img1 slideanim">
+                        <img src="./images/sec1-img2.png" alt="">
+                    </div>
+                    <div class="event-bg2">
+                    </div>
+                    <div class="event-img2 slideanim">
+                        <img src="./images/sec1-img1.png" alt="">
                     </div>
                 </section>
-                <section class="sec4">
+                <section class="sec-g sec2">
+                    <div class="tit">
+                        <h2>전문 셀럽 강사진</h2>
+                        <p>15명의 전문 셀럽 강사진들이 당신의 꿈을 현실로 만들어드립니다.</p>
+                    </div>
+
+                    <div class="event-img slideanim">
+                        <img src="./images/sec2-img1.png" alt="">
+                    </div>
+                </section>
+                <section class="sec-g sec3">
+                    <div class="tit">
+                        <h2>하루 딱 <span>5</span>분!</h2>
+                        <p>1일 5분, 전문 셀럽 강사 'FM스쿨'과 함께하는 플러그UP 강좌</p>
+                    </div>
+                    <div class="swiper scroll-verti">
+                        <ul class="swiper-wrapper lst-class">
+                            <li class="swiper-slide">
+                                <a href="#" class="link-thumb">
+                                    <img src="./images/thumb-hot1.png" alt="재테크 어떻게 하세요?" />
+                                </a>
+                                <a href="#" class="link-txt">
+                                    <em class="scab">입문</em>
+                                    <strong class="tit"> 자본시장에서 주식시장의 역할</strong>
+                                    <span class="writer">이수민</span>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#" class="link-thumb">
+                                    <img src="./images/thumb-hot2.png" alt="주식에도 트렌드가 있다." />
+                                </a>
+                                <a href="#" class="link-txt">
+                                    <em class="scab">입문</em>
+                                    <strong class="tit"> 주식시장의 인플루언서, 주도주와 테마주 </strong>
+                                    <span class="writer">도지은</span>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#" class="link-thumb">
+                                    <img src="./images/thumb-hot3.png" alt="고수들도 하는 초보 투자자들의 실수" />
+                                </a>
+                                <a href="#" class="link-txt">
+                                    <em class="scab">입문</em>
+                                    <strong class="tit"> 초보투자자들의 흔한 실수</strong>
+                                    <span class="writer">최혜윤</span>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#" class="link-thumb">
+                                    <img src="./images/thumb-hot4.png" alt="성공투자를 위한 투자노트" />
+                                </a>
+                                <a href="#" class="link-txt">
+                                    <em class="scab">입문</em>
+                                    <strong class="tit">성공투자를 위한 필수조건! 투자노트</strong>
+                                    <span class="writer">신영일</span>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#" class="link-thumb">
+                                    <img src="./images/thumb-hot5.png" alt="금리가 주가에 미치는 영향" />
+                                </a>
+                                <a href="#" class="link-txt">
+                                    <em class="scab">입문</em>
+                                    <strong class="tit"> 금리와 주가의 연결고리</strong>
+                                    <span class="writer">이용석</span>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#" class="link-thumb">
+                                    <img src="./images/thumb-hot6.png" alt="나의 투자 성향은?" />
+                                </a>
+                                <a href="#" class="link-txt">
+                                    <em class="scab">입문</em>
+                                    <strong class="tit">나의 투자성향 파악하기</strong>
+                                    <span class="writer">최혜윤</span>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#" class="link-thumb">
+                                    <img src="./images/thumb-hot7.png" alt="원석같은 종목 찾아내는 방법" />
+                                </a>
+                                <a href="#" class="link-txt">
+                                    <em class="scab">입문</em>
+                                    <strong class="tit">재무비율분석으로 좋은 종목 선정하기</strong>
+                                    <span class="writer">도지은</span>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#" class="link-thumb">
+                                    <img src="./images/thumb-hot8.png" alt="주식투자 성공투자 3원칙" />
+                                </a>
+                                <a href="#" class="link-txt">
+                                    <em class="scab">입문</em>
+                                    <strong class="tit">주식투자 성공투자 3원칙</strong>
+                                    <span class="writer">송영욱</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <script>
+                        var swiper = new Swiper(".scroll-verti", {
+                            loop: true,
+                          slidesPerView: 4,
+                          spaceBetween: 13,
+                            autoplay: {
+                            delay: 2500,
+                            disableOnInteraction: false,
+                            },
+                          pagination: {
+                            el: ".swiper-pagination",
+                            clickable: true,
+                          },
+                        });
+                      </script>
+                </section>
+                <section class="sec-g sec4">
+                    <div class="tit">
+                        <h2>주식뉴스 실시간 제공</h2>
+                        <p>주식의 흐름을 빠르게 파악할 수 있도록 모든 뉴스를 한 곳에 모아 실시간으로 제공합니다.</p>
+                    </div>
+                    <div class="event-img slideanim">
+                        <img src="./images/sec4-img1.png" alt="">
+                    </div>
+                </section>
+                <section class="sec-g sec5">
+                    <div class="tit">
+                        <h2> <em>수익률이 검증 된</em>
+                            <b>베테랑 애널리스트</b>의 <b class="txt-blue">스마트 추천</b></h2>
+                        <p>애널리스트들의 검증 된 수익률로 누구나 성공적인 투자 실현이 가능합니다.</p>
+                    </div>
+                    <div class="event-img slideanim">
+                        <img src="./images/sec5-img1.png" alt="">
+                    </div>
+                </section>
+                <section class="sec-g sec6">
                     <div class="tit">
                         <h2>진행 프로세스</h2>
                         <p>플러스업의 프로세스는 수많은 노하우와 안정성을 바탕으로 진행됩니다.</p>
                     </div>
+                    <div class="event-img slideanim">
+                        <img src="./images/sec6-img1.png" alt="">
+                    </div>
                     <div class="cont">
-                        <ul>
+                        <ul class="blind">
                             <li>
                                 <strong>step1. 테마별 수급캐치 </strong>
                                 트랜드에 맞는 수급 포착
@@ -160,13 +308,15 @@
                         </ul>
                     </div>
                 </section>
-                <section class="sec5">
-                    <div class="tit-event">
+                <section class="sec-g sec7">
+                    <div class="event-img1"></div>
+                    <div class="event-img2"></div>
+                    <div class="blind">
                         <p>회원만이 누릴 수 있는 프리미엄 서비스</p>
                         <h2>VIP멤버십 회원제도</h2>
                     </div>
                     <div class="cont">
-                        <div class="benefit">
+                        <div class="blind">
                             <dl>
                                 <dt>실시간 분석 서비스</dt>
                                 <dd>기관, 외국인, 세력의 정보 및 수급 파악 후 최적의 포트폴리오 제공!</dd>
@@ -176,7 +326,7 @@
                                 <dd>개개인 니즈에 맞는 분야별 셀럽들의 교육강좌 제공</dd>
                             </dl>
                         </div>
-                        <div class="memberonly">
+                        <div class="blind">
                             <strong>member only VIP</strong>
                             <ul>
                                 <li>
@@ -208,9 +358,32 @@
                         </div>
                     </div>
                 </section>
-                <section class="sec6"></section>
             </main>
-            <footer id="footer"></footer>
         </div>
+        <script>
+            $(document).ready(function(){
+              $("#gnb a").on('click', function(event) {
+                if (this.hash !== "") {
+                  event.preventDefault();            
+                  var hash = this.hash;
+                  $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                  }, 900, function(){               
+                    window.location.hash = hash;
+                  });
+                } 
+              });
+              
+              $(window).scroll(function() {
+                $(".slideanim").each(function(){
+                  var pos = $(this).offset().top;            
+                  var winTop = $(window).scrollTop();
+                    if (pos < winTop + 600) {
+                      $(this).addClass("slide");
+                    }
+                });
+              });
+            })
+            </script>
     </body>
 </html>

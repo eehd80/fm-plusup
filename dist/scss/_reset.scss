@@ -136,7 +136,7 @@ select,
 textarea,
 button {
     font-size: 14px;
-    font-family: "NanumBarunGothic", "NanumSquare", "Malgun Gothic", "맑은 고딕", sans-serif;
+    font-family: "NanumBarunGothic", "Malgun Gothic", "맑은 고딕", sans-serif;
     font-weight: 400;
     line-height: 1.5;
     color: #000;
@@ -274,7 +274,7 @@ legend {
 .m {
     display: none !important;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 980px) {
     .pc {
         display: none !important;
     }
@@ -302,9 +302,9 @@ legend {
     }
 }
 
-html {
-    background: url(../../pc.png) 50% 0 no-repeat;
-    body {
-        opacity: 0.5;
-    }
-}
+// html {
+//     background: url(../../m.jpg) 50% 0 no-repeat;
+//     body {
+//         opacity: 0.7;
+//     }
+// }

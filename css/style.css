@@ -8458,6 +8458,7 @@ textarea:focus {
     position: absolute;
     bottom: 0;
     right: 0;
+    bottom: 10px;
     width: 70%;
   }
   .sub_banner_layer {
@@ -11910,17 +11911,21 @@ textarea:focus {
     height: 500px;
   }
   .sub_b_con .txt .main_p {
-    font-size: 28px;
+    font-size: 32px;
   }
   .sub_b_con .txt img {
-    width: 170px;
+    margin-top: 6px;
+    width: 235px;
   }
   .sub_b_con .txt .info {
-    font-size: 15px;
+    margin-top: 14px;
+    font-size: 16px;
     word-break: keep-all;
   }
   .sub_b_con .img {
-    width: 100%;
+    left: -30px;
+    right: -40px;
+    width: auto;
   }
   .sub_cur_wrap .tit_box .tit {
     font-size: 25px;
@@ -11958,7 +11963,8 @@ textarea:focus {
     width: 13px;
   }
   .sub_banner_layer {
-    padding: 40px 30px 0;
+    height: 594px;
+    padding: 45px 40px 0;
   }
   /*sub04_01*/
   .sub_layer .sub_menu li a {
@@ -12705,8 +12711,11 @@ textarea:focus {
   display: inline-block;
   margin-left: 5px;
   content: "\f105";
+  display: inline-block;
+  margin-top: -3px;
   font-family: "Line Awesome Free";
   font-weight: 900;
+  vertical-align: middle;
   opacity: 0.5;
   line-height: 1;
   font-style: normal;
@@ -12715,10 +12724,6 @@ textarea:focus {
 @media (max-width: 1300px) {
   .sec-instructor {
     height: auto;
-  }
-  .sec-instructor .link-detail {
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
   }
 }
 
@@ -12734,6 +12739,39 @@ textarea:focus {
   }
   .sec-instructor .sec-tit h2 {
     font-size: 6vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .sec-instructor {
+    position: relative;
+    padding: 0;
+  }
+  .sec-instructor .sec-tit {
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 100%;
+  }
+  .sec-instructor .sec-tit p {
+    margin-top: 20px;
+  }
+  .sec-instructor .sec-cont {
+    margin-top: 0;
+  }
+  .sec-instructor .sec-cont img {
+    width: 100%;
+  }
+  .sec-instructor .link-detail {
+    position: absolute;
+    bottom: 65px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: calc(100% - 70px);
+    margin-top: 0;
   }
 }
 
@@ -12773,5 +12811,13 @@ textarea:focus {
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
   }
+}
+
+html {
+  background: url(../m2.png) 34% -189px no-repeat;
+}
+
+html body {
+  opacity: 0.5;
 }
 /*# sourceMappingURL=style.css.map */
