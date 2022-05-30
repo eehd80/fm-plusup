@@ -1070,6 +1070,9 @@ html body {
     width: 100%;
     background-color: #fff;
   }
+  .intro .lst-info a {
+    padding: 24px 0 0 30px;
+  }
   .sec1 {
     display: none;
   }

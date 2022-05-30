@@ -68,6 +68,7 @@ textarea:focus {
   font-size: 62px;
   color: #202020;
   font-family: "ONE-Mobile-Title";
+  white-space: nowrap;
 }
 
 .sub_b_con .txt img {
