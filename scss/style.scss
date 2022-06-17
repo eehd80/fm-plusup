@@ -14623,7 +14623,7 @@ textarea:focus {
     }
 }
 
-// 220526 수정
+// 220526 강의소개 수정
 .plusup-onestop .lst-onestop li {
     opacity: 1 !important;
 }
@@ -14651,10 +14651,11 @@ textarea:focus {
         display: none;
     }
     .sec-cont {
-        margin-top: 55px;
+        max-width: 1238px;
+        margin: 55px auto 0;
         img {
             display: block;
-            width: 90%;
+            width: 100%;
             max-width: 1238px;
             margin: 0 auto;
         }
@@ -14686,6 +14687,55 @@ textarea:focus {
             line-height: 1;
             font-style: normal;
         }
+    }
+    .honeycomb-wrap {
+        position: relative;
+        .row {
+            position: absolute;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .row1 {
+            top: 117px;
+            padding-left: 12.2%;
+        }
+        .row2 {
+            top: 206px;
+            padding-right: 12.1%;
+        }
+        .row3 {
+            top: 294px;
+            padding-left: 12.1%;
+        }
+        .row4 {
+            top: 381px;
+            padding: 0 12.1% 0 24.2%;
+        }
+        .honeycomb-g {
+            // @include posXY;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            width: 190px;
+            height: 167px;
+            border-radius: 28%;
+            background: url(../img/sub_img/bg-polygon.png) 0 0 / contain no-repeat;
+            // background-color: red;
+            &:hover {
+                &::before {
+                    content: "";
+                    display: block;
+                    width: 46px;
+                    height: 18px;
+                    margin-right: 20px;
+                    background: url(../img/sub_img/ico-arrow-ani.gif) 0 0 no-repeat;
+                }
+            }
+        }
+        // .honeycomb-1 {
+        //     margin: -10px 0 0 -42.5%;
+        // }
     }
 }
 @media (max-width: 1300px) {
