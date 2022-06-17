@@ -14720,9 +14720,8 @@ textarea:focus {
             width: 190px;
             height: 167px;
             border-radius: 28%;
-            // background-color: red;
-            background: url(../img/sub_img/bg-polygon.png) 0 0 / contain no-repeat;
             &:hover {
+                background: url(../img/sub_img/bg-polygon.png) 0 0 / contain no-repeat;
                 &::before {
                     content: "";
                     display: block;

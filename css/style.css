@@ -12781,6 +12781,9 @@ textarea:focus {
   width: 190px;
   height: 167px;
   border-radius: 28%;
+}
+
+.sec-instructor .honeycomb-wrap .honeycomb-g:hover {
   background: url(../img/sub_img/bg-polygon.png) 0 0/contain no-repeat;
 }
 
