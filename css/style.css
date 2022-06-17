@@ -12686,7 +12686,7 @@ textarea:focus {
 }
 
 .sec-instructor .sec-cont {
-  max-width: 1238px;
+  width: 1238px;
   margin: 55px auto 0;
 }
 
@@ -12781,9 +12781,6 @@ textarea:focus {
   width: 190px;
   height: 167px;
   border-radius: 28%;
-}
-
-.sec-instructor .honeycomb-wrap .honeycomb-g:hover {
   background: url(../img/sub_img/bg-polygon.png) 0 0/contain no-repeat;
 }
 
@@ -12812,6 +12809,9 @@ textarea:focus {
     width: 100%;
   }
   .sec-instructor img.bg-inst-pc {
+    display: none;
+  }
+  .sec-instructor .honeycomb-wrap .row {
     display: none;
   }
 }

@@ -14651,7 +14651,7 @@ textarea:focus {
         display: none;
     }
     .sec-cont {
-        max-width: 1238px;
+        width: 1238px;
         margin: 55px auto 0;
         img {
             display: block;
@@ -14721,8 +14721,8 @@ textarea:focus {
             height: 167px;
             border-radius: 28%;
             // background-color: red;
+            background: url(../img/sub_img/bg-polygon.png) 0 0 / contain no-repeat;
             &:hover {
-                background: url(../img/sub_img/bg-polygon.png) 0 0 / contain no-repeat;
                 &::before {
                     content: "";
                     display: block;
@@ -14754,6 +14754,9 @@ textarea:focus {
         img.bg-inst-pc {
             display: none;
         }
+    }
+    .sec-instructor .honeycomb-wrap .row {
+        display: none;
     }
 }
 @media (max-width: 680px) {
